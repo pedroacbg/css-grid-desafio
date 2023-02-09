@@ -87,9 +87,14 @@
   border-radius: 50%;
 }
 
+main {
+  display: flex;
+  padding-top: 50px;
+}
+
 .side-bar {
   width: 400px;
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(10, 1fr);
@@ -112,4 +117,42 @@
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
+}
+
+.content {
+  display: grid;
+  padding: 60px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.title img {
+  width: 80px;
+}
+
+.title h2 {
+  width: 80%;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.video p {
+  font-size: 18px;
+  padding-left: 100px;
 }
